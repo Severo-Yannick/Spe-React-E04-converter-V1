@@ -1,0 +1,28 @@
+// == Import : variables SCSS
+@use 'src/styles/vars';
+
+ .currencies {
+   &__title {
+     font-weight: vars.$title-weight;
+     color: vars.$primary-color;
+     padding: 0.7em;
+   }
+   &__list {
+     overflow: auto;
+     height: 200px;
+   }
+   .currency {
+     color: vars.$primary-color;
+     padding: 0.7em;
+     font-weight: vars.$currencies-weight;
+     border-bottom: 1px solid vars.$secondary-color;
+     cursor: pointer;
+     transition: vars.$transition-fast;
+     &:hover {
+       background-color: vars.$secondary-color;
+     }
+     &:first-of-type {
+       border-top: 1px solid vars.$secondary-color;
+     }
+   }
+ }

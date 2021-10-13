@@ -1,0 +1,18 @@
+// == Import : variables SCSS
+@use 'src/styles/vars';
+
+.amount {
+  padding: 2rem;
+  text-align: center;
+  background-color: vars.$light-color;
+  color: vars.$primary-color;
+
+  &__value {
+    font-weight: vars.$title-weight;
+    font-size: 2em;
+  }
+
+  &__currency {
+    font-size: 1.2em;
+  }
+}

@@ -1,3 +1,10 @@
-body {
-  background-color: lightgrey;
+// == Import : variables SCSS
+@use 'src/styles/vars';
+
+.converter {
+  width: 350px;
+  min-height: 400px;
+  background-color: vars.$light-color;
+  margin: 2rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }

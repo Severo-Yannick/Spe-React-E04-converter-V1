@@ -6,4 +6,9 @@
 body {
   font-family: vars.$font-family;
   font-weight: vars.$text-weight;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: vars.$secondary-color;
 }

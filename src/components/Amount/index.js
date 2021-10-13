@@ -1,9 +1,11 @@
+// == Import :
 import React from 'react';
+import './styles.scss';
 
 const Amount = () => (
-  <footer className="converter__footer">
-    <p>1.09</p>
-    <h2>United States Dollar</h2>
+  <footer className="amount">
+    <p className="amount__value">1.09</p>
+    <h3 className="amount__currency">United States Dollar</h3>
   </footer>
 );
 
