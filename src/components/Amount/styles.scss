@@ -15,4 +15,8 @@
   &__currency {
     font-size: 1.2em;
   }
+
+  &__empty {
+    font-weight: vars.$title-weight;
+  }
 }
