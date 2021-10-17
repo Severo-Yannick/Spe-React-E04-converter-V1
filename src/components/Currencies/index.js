@@ -34,5 +34,6 @@ Currencies.prototype = {
 Currencies.defaultProps = {
   currencies: [],
 };
-
-export default Currencies;
+// la fonction devient pure avec "memo" le render sera effectué uniquement
+// s'il y a un changement du composant
+export default React.memo(Currencies);

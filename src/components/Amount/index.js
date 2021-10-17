@@ -20,7 +20,7 @@ const Amount = ({ value, name }) => (
   </footer>
 );
 
-Amount.PropTypes = {
+Amount.propTypes = {
   value: PropTypes.number,
   name: PropTypes.string,
 };
@@ -29,5 +29,6 @@ Amount.defaultProps = {
   value: null,
   name: null,
 };
-
-export default Amount;
+// la fonction devient pure avec "memo" le render sera effectué uniquement 
+// s'il y a un changement du composent
+export default React.memo(Amount);
