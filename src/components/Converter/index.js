@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 // == Import : composants
 import Header from 'src/components/Header';
+import Toggler from 'src/components/Toggler';
 import Currencies from 'src/components/Currencies';
 import Amount from 'src/components/Amount';
 // == Import : data
@@ -36,6 +37,13 @@ class Converter extends Component {
             />
           )
         }
+        <Toggler
+          buttonClick={() => {
+            this.setState({
+              open: !open,
+            });
+          }}
+        />
         <Amount
           name="United State Dollar"
           value={1.09}
