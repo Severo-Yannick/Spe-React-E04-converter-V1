@@ -38,6 +38,7 @@ class Converter extends Component {
           )
         }
         <Toggler
+          active={open}
           buttonClick={() => {
             this.setState({
               open: !open,
